@@ -1,0 +1,19 @@
+<launch>
+    <node
+        name="kamera"
+        pkg="usb_cam"
+        type="usb_cam_node"
+    >
+        <param name="camera_name" value="kamera"></param>
+    </node>
+    <node
+        name="deteksi_bola"
+        pkg="persepsi"
+        type="deteksi_bola"
+    ></node>
+    <!-- <node
+        name="penampil_deteksi"
+        pkg="persepsi"
+        type="penampil_deteksi"
+    ></node> -->
+</launch>
